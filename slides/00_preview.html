@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link href="../favicon.ico" rel="icon">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
+
+  <meta name="author" content="Daniel Sabanés Bové and Jack Talboys">
+  <meta name="dcterms.date" content="2024-07-08">
+  <title>GSWEP4R Tutorial – 0 Preview</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ce29858ef31f7fc90306434e67c1dbe4.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="resources/RCONIS.png" data-background-opacity="1" data-background-position="20px 20px" data-background-size="200px 200px" class="quarto-title-block center">
+  <h1 class="title">0 Preview</h1>
+  <p class="subtitle">Tutorial: Good Software Engineering Practice for R Packages</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Daniel Sabanés Bové and Jack Talboys 
+</div>
+</div>
+</div>
+
+  <p class="date">July 8, 2024</p>
+</section>
+<section id="disclaimer" class="slide level2">
+<h2>Disclaimer</h2>
+<p><em>Any opinions expressed in this presentation and on the following slides are solely those of the presenter and not necessarily those of their employers.</em></p>
+</section>
+<section id="today" class="slide level2">
+<h2>Today</h2>
+<p>What are we going to do today?</p>
+<p>Give you a preview of the course <em>“Good Software Engineering Practice for R Packages”</em> at the <a href="https://snb2025.sciencesconf.org/">SnB 2025 conference</a> in Paris, France!</p>
+<p>But no worries if you can’t make it to the conference, we will share all materials online …</p>
+<p>Plus you will learn some awesome things right here, today!</p>
+</section>
+<section id="where-are-we-from-openstatsware" class="slide level2">
+<h2>Where are we from? <code>openstatsware</code></h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><a href="https://openstatsware.org">openstatsware.org</a></li>
+<li>Since: 19 August 2022 - already 3 years now!</li>
+<li>Where: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)</li>
+<li>Who: Currently more than 60 statisticians from more than 30 organizations</li>
+<li>What: Engineer packages and spread best practices</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="https://raw.githubusercontent.com/RConsortium/asa-biop-swe-wg/main/sticker/openstatsware-hex.svg" height="300"></p>
+</div></div>
+</section>
+<section id="daniel" class="slide level2">
+<h2>Daniel</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="resources/daniel.jpg"></p>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>Ph.D.&nbsp;in Statistics from University of Zurich, Bayesian Model Selection</li>
+<li>Biostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years</li>
+<li>Co-founder of <a href="https://rconis.com">RCONIS</a> mid 2024 - it has already been 1 year now!</li>
+<li>Multiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of <code>openstatsware</code></li>
+<li>Feel free to connect <a href="https://www.linkedin.com/in/danielsabanesbove/"><code>r fontawesome::fa("linkedin")</code></a> <a href="https://github.com/danielinteractive"><code>r fontawesome::fa("github")</code></a> <a href="https://rconis.com"><code>r fontawesome::fa("globe")</code></a></li>
+</ul>
+</div></div>
+</section>
+<section id="jack" class="slide level2">
+<h2>Jack</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>BSc in Statistics from the University of Bath</li>
+<li>Data Scientist with Mango Solutions/Ascent, a Data consultancy, for 5 years</li>
+<li>Joined Novartis as a Software Developer in April 2024, part of the Open-source enablment team.</li>
+<li>Day-to-day is helping study teams to use Open-source, through direct support or building tools! <a href="https://www.linkedin.com/in/jack-talboys-44b854169/"><code>r fontawesome::fa("linkedin")</code></a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="resources/jack.jpg"></p>
+</div></div>
+</section>
+<section id="what-you-will-learn-in-the-short-course" class="slide level2">
+<h2>What you will learn in the short course</h2>
+<ul>
+<li>Understand the basic structure of an R package</li>
+<li>Create your own R <code>r fontawesome::fa("cube")</code></li>
+<li>Learn about &amp; apply professional <code>r fontawesome::fa("cube")</code> development workflow</li>
+<li>Learn &amp; apply fundamentals of quality control for R <code>r fontawesome::fa("cube")</code></li>
+<li>Learn how to make an R <code>r fontawesome::fa("cube")</code> available to others</li>
+</ul>
+</section>
+<section id="what-do-we-mean-by-gswep4r" class="slide level2">
+<h2>What do we mean by GSWEP4R*?</h2>
+
+<ul>
+<li>Applying concept of “Good XYZ Practice” to SWE with R</li>
+<li>Improve <strong>quality</strong> and <strong>longevity</strong> of R code/packages<br>
+</li>
+<li>Not a universal standard; we share our perspectives</li>
+<li>Collection of best practices</li>
+<li>Do not reinvent the wheel: learn from the community</li>
+</ul>
+<aside><div>
+<p>* Good Software Engineering Practice for R</p>
+</div></aside></section>
+<section id="why-care-about-gswep4r" class="slide level2">
+<h2>Why care about GSWEP4R?</h2>
+<ul>
+<li>R is one of the most successfull statistical programming languages</li>
+<li>R is a powerful yet complex <em>ecosystem</em>
+<ul>
+<li>Core component: R packages</li>
+<li>Mature analysts: users &amp; contributors</li>
+<li>Deep understanding crucial, even to just assess quality</li>
+</ul></li>
+<li>Analyses increasingly require complex scripts/programs</li>
+<li>The concepts are applicable to other languages, too (Python, Julia, etc.)</li>
+</ul>
+</section>
+<section id="start-small---from-script-to-package" class="slide level2">
+<h2>Start small - from script to package</h2>
+<ol type="1">
+<li>Encapsulate behavior (functions)</li>
+<li>Avoid global state/variables</li>
+<li>Adopt consistent coding style</li>
+<li>Document well</li>
+<li>Add test cases</li>
+<li>Refactor and optimize code</li>
+<li>Version your code</li>
+<li>Share as an R package</li>
+</ol>
+</section>
+<section id="structure-of-an-r-package" class="slide level2">
+<h2>Structure of an R package</h2>
+<ul>
+<li>The source of an R package is a directory with a specific structure:
+<ul>
+<li><code>DESCRIPTION</code> file with metadata</li>
+<li><code>NAMESPACE</code> file to define API</li>
+<li><code>R/</code> directory with R scripts - the “meat” of the package!</li>
+<li><code>man/</code> directory with documentation</li>
+<li><code>tests/</code> directory with test scripts (optional but important!)</li>
+<li>other optional directories (<code>data/</code>, <code>vignettes/</code>, <code>inst/</code>, etc.)</li>
+</ul></li>
+<li>The package can be built into a single file (tarball) for CRAN submission, email etc.</li>
+</ul>
+</section>
+<section id="how-to-start-creating-an-r-package" class="slide level2">
+<h2>How to start creating an R package?</h2>
+<ul>
+<li>Use the <code>usethis</code> package to create a new package
+<ul>
+<li><code>usethis::create_package("path/to/package")</code></li>
+</ul></li>
+<li>Use RStudio to create a new package project
+<ul>
+<li>File &gt; New Project &gt; New Directory &gt; R Package</li>
+</ul></li>
+<li>Creates the required directory structure and files for you!</li>
+</ul>
+</section>
+<section id="which-steps-should-i-make" class="slide level2">
+<h2>Which steps should I make?</h2>
+<ul>
+<li>Recommend to start with a “design doc”
+<ul>
+<li>What is the purpose of the package? (objectives)</li>
+<li>What is the user interface? (conceptual design)</li>
+<li>What are the main functions? (prototype code)</li>
+</ul></li>
+<li>Align with your team and stakeholders</li>
+<li>Then start with the actual package implementation
+<ul>
+<li>Build up function by function</li>
+<li>Always include documentation and tests for each function</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-can-i-ensure-a-high-quality-of-my-r-package" class="slide level2">
+<h2>How can I ensure a high quality of my R package?</h2>
+<ul>
+<li>Use a consistent coding style
+<ul>
+<li>e.g.&nbsp;<code>snake_case</code> <em>or</em> <code>camelCase</code> for function names</li>
+</ul></li>
+<li>Use a consistent format
+<ul>
+<li>Use <a href="https://posit-dev.github.io/air/"><code>air</code></a> to automatically format</li>
+</ul></li>
+<li>Use <code>lintr</code> package to check for common issues</li>
+<li>Test all of your functions, typically with the <code>testthat</code> package</li>
+<li>Include user facing long form documentation (vignettes) to explain how to use the package<br>
+</li>
+<li>Follow the <a href="https://www.openstatsware.org/guide.html">openstatsguide</a> checklist</li>
+</ul>
+</section>
+<section id="how-to-publish-my-r-package" class="slide level2">
+<h2>How to publish my R package?</h2>
+<ul>
+<li>Start with a GitHub repository</li>
+<li>Add a <code>pkgdown</code> website to showcase the package</li>
+<li>Use <code>devtools::check()</code> to check the package for common issues</li>
+<li>Use <code>rhub::check()</code> to check the package on different platforms</li>
+<li>Once ready, submit to CRAN (make sure to read the <a href="https://cran.r-project.org/web/packages/policies.html">CRAN policies</a>)</li>
+<li>In addition or alternatively, create your <a href="https://docs.r-universe.dev/publish/set-up.html">R Universe</a> to host the package</li>
+</ul>
+</section>
+<section id="before-and-after-the-course" class="slide level2">
+<h2>Before and after the course</h2>
+<p>What difference will the course make?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="before">Before</h3>
+<ul>
+<li>Unstructured scripts</li>
+<li>Hard to reproduce results</li>
+<li>Difficult to share or reuse code</li>
+<li>No automated tests</li>
+<li>Inconsistent style and documentation</li>
+<li>Challenging to maintain or extend</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="after">After</h3>
+<ul>
+<li>Organized R packages</li>
+<li>Reproducible workflows</li>
+<li>Easy to share and collaborate</li>
+<li>Automated testing and quality checks</li>
+<li>Consistent style and clear documentation</li>
+<li>Easier maintenance and future development</li>
+</ul>
+</div></div>
+</section>
+<section id="section" class="slide level2" data-background-image="resources/snb.png" data-background-size="cover">
+<h2></h2>
+</section>
+<section id="the-conference" class="slide level2">
+<h2>The conference</h2>
+<ul>
+<li>10th Statistics &amp; Biopharmacy Conference (<a href="https://snb2025.sciencesconf.org/">SnB 2025</a>)</li>
+<li>8 to 10 October 2025, Paris, France
+<ul>
+<li>Venue is “Les salons de l’Aveyron”</li>
+</ul></li>
+<li>Invited speakers give keynote presentations, see the <a href="https://snb2025.sciencesconf.org/resource/page/id/9">list</a></li>
+<li>Contributed talks and posters, see the <a href="https://snb2025.sciencesconf.org/program?lang=en">program</a></li>
+<li>Poster and wine session</li>
+<li>Conference dinner</li>
+</ul>
+<!-- October is the best month in Paris for spotting gorgeous foliage throughout the city and feels quintessentially Parisian with all of the locals showing out in their best fall fashion. The evenings are cooler, so pack a sweater and coat and expect substantially less crowds than other times of year. -->
+</section>
+<section id="how-to-register-for-the-short-course" class="slide level2">
+<h2>How to register for the short course?</h2>
+<ul>
+<li>Register for the conference and/or this short course <a href="https://snb2025.sciencesconf.org/registration">here</a></li>
+<li>Short course fee is 150 EUR (early bird until 15 July 2025, later 200 EUR)</li>
+<li>You get a discount if you book two short courses! (2 for 250 EUR)
+<ul>
+<li>The second course is “Applied Modelling in Drug Development - Flexible regression modelling in Stan via brms” by Sebastian Weber and Lukas Widmer (Novartis) on 8 October 2025, also highly recommended!</li>
+</ul></li>
+<li>Limited number of places available, so register early!</li>
+</ul>
+</section>
+<section id="question-comments" class="title-slide slide level1 center">
+<h1>Question, Comments?</h1>
+
+</section>
+
+<section id="license-information" class="title-slide slide level1 center">
+<h1>License information</h1>
+<ul>
+<li>Creators (initial authors): Daniel Sabanes Bove <a href="https://github.com/danielinteractive/"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/danielsabanesbove/"><code>r fontawesome::fa("linkedin")</code></a>, Friedrich Pahlke <a href="https://github.com/fpahlke/"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/pahlke/"><code>r fontawesome::fa("linkedin")</code></a>, Kevin Kunzmann <a href="https://github.com/kkmann/"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/"><code>r fontawesome::fa("linkedin")</code></a>, Andrew Bean <a href="https://github.com/andrew-bean"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/andrew-bean-83539116/"><code>r fontawesome::fa("linkedin")</code></a>, Doug Kelkhoff <a href="https://github.com/dgkf"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/doug-kelkhoff/"><code>r fontawesome::fa("linkedin")</code></a>, Philippe Boileau <a href="https://github.com/philboileau"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/philippe-boileau-773270205/"><code>r fontawesome::fa("linkedin")</code></a> <a href="https://pboileau.ca/"><code>r fontawesome::fa("globe")</code></a></li>
+<li>In the current version, changes were done by (later authors): Jack Talboys <a href="https://github.com/jtalboys/"><code>r fontawesome::fa("github")</code></a> <a href="https://www.linkedin.com/in/jack-talboys-44b854169/"><code>r fontawesome::fa("linkedin")</code></a></li>
+<li>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</li>
+<li>The source files are hosted at <a href="https://github.com/RCONIS/user2024-tutorial-gswep">github.com/RCONIS/user2024-tutorial-gswep</a>, which is forked from and a subset of the original version at <a href="https://github.com/RCONIS/workshop-r-swe-zrh">github.com/RCONIS/workshop-r-swe-zrh</a>.</li>
+<li>Important: To use this work you must provide the name of the creators (initial authors), a link to the material, a link to the license, and indicate if changes were made</li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>Good Software Engineering Practice for R Packages - <a href="../index.html" title="GSWEP4R Tutorial">Home</a> | <a href="../listing.html" title="Overview of all slides">Slides</a> | <a href="http://creativecommons.org/licenses/by-sa/4.0/" title="License: CC BY-SA 4.0">License</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/RCONIS\.github\.io\/user2024-tutorial-gswep");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
