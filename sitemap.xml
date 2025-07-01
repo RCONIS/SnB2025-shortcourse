@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/LICENSE.html</loc>
+    <lastmod>2025-07-01T07:15:51.927Z</lastmod>
+  </url>
+  <url>
     <loc>https://rconis.github.io/SnB2025-shortcourse/index.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/listing.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/06_conclusion.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/04_quality.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/00_preview.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/02_r_packages.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/01_intro.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
   </url>
   <url>
     <loc>https://rconis.github.io/SnB2025-shortcourse/slides/03_workflow.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/04_quality.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/06_conclusion.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/00_preview.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
   </url>
   <url>
     <loc>https://rconis.github.io/SnB2025-shortcourse/slides/05_publication.html</loc>
-    <lastmod>2025-06-20T08:27:15.304Z</lastmod>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
   </url>
   <url>
-    <loc>https://rconis.github.io/SnB2025-shortcourse/LICENSE.html</loc>
-    <lastmod>2025-06-20T08:27:15.295Z</lastmod>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/01_intro.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/slides/02_r_packages.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconis.github.io/SnB2025-shortcourse/listing.html</loc>
+    <lastmod>2025-07-01T07:15:51.935Z</lastmod>
   </url>
 </urlset>
