@@ -28,19 +28,19 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 :::
 :::
 
-## Friedrich
+## Jack
 
 ::: columns
 ::: {.column width="70%"}
--   Since 2008 self-employed consultant for computer science and data science as well as biostatistics
--   Co-founder and CEO of RPACT, a company developing the formally validated R package [rpact](https://cran.r-project.org/package=rpact "rpact: Confirmatory Adaptive Clinical Trial Design and Analysis") with 28 releases on CRAN since 2018
--   Co-founder of [RCONIS](https://rconis.com)
--   Trained software architect; R programmer since 2004; R Shiny developer since 2019
--   Feel free to connect at [`r fontawesome::fa("linkedin")` LinkedIn](http://www.linkedin.com/in/pahlke "Friedrich Pahlke at LinkedIn") or [`r fontawesome::fa("github")` Github](https://github.com/fpahlke "Friedrich Pahlke at GitHub")
+-   BSc in Statistics from the University of Bath
+-   Data Scientist with Mango Solutions/Ascent, a Data consultancy, for 5 years
+-   Joined Novartis as a Software Developer in April 2024, part of the Open-source enablement team.
+-   Day-to-day is helping study teams to use Open-source, through direct support or building tools!
+    [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/jack-talboys-44b854169/)
 :::
 
 ::: {.column width="30%"}
-![](resources/friedrich.jpg)
+![](resources/jack.jpg)
 :::
 :::
 
@@ -49,7 +49,7 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 ::: columns
 ::: {.column width="70%"}
 - [openstatsware.org](https://openstatsware.org)
-- Since: 19 August 2022 - almost 2 years now!
+- Since: 19 August 2022 - over 3 years now!
 - Where: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)
 - Who: Currently more than 50 statisticians from more than 30 organizations
 - What: Engineer packages and spread best practices
@@ -82,9 +82,9 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 
 ## House-keeping
 
--   Course website at [RCONIS.github.io/user2024-tutorial-gswep](https://RCONIS.github.io/user2024-tutorial-gswep)
+-   Course website at [RCONIS.github.io/SnB2025-shortcourse](https://rconis.github.io/SnB2025-shortcourse/)
     -   all slides
-    -   sources available at [github.com/RCONIS/user2024-tutorial-gswep](https://github.com/RCONIS/user2024-tutorial-gswep)
+    -   sources available at [github.com/RCONIS/SnB2025-shortcourse](https://github.com/RCONIS/SnB2025-shortcourse)
     -   all materials CC-BY-SA 4.0
 -   We offer a [gitter chat channel](https://matrix.to/#/#workshop-r-swe_community:gitter.im)
     -   use to ask your peers questions
