@@ -7,7 +7,7 @@ author: Daniel Sabanés Bové and Jack Talboys
 
 ## Disclaimer
 
-*Any opinions expressed in this presentation and on the following slides are solely those of the presenter and not necessarily those of their employers.*
+{{< include _disclaimer.qmd >}}
 
 ## Daniel
 
@@ -64,7 +64,6 @@ author: Daniel Sabanés Bové and Jack Talboys
 
 -   Understand the basic structure of an R package
 -   Create your own R `r fontawesome::fa("cube")`
--   Learn about & apply professional `r fontawesome::fa("cube")` development workflow
 -   Learn & apply fundamentals of quality control for R `r fontawesome::fa("cube")`
 -   Learn how to make an R `r fontawesome::fa("cube")` available to others
 
@@ -85,14 +84,10 @@ author: Daniel Sabanés Bové and Jack Talboys
     -   all slides
     -   sources available at [github.com/RCONIS/SnB2025-shortcourse](https://github.com/RCONIS/SnB2025-shortcourse)
     -   all materials CC-BY-SA 4.0
--   We offer a [gitter chat channel](https://matrix.to/#/#workshop-r-swe_community:gitter.im)
-    -   use to ask your peers questions
 
 ## What you will need
 
--   Local R development environment with
-    -   git `r fontawesome::fa("git-alt")`
-    -   Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
+-   Local R development environment with Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
 -   Install additional R packages using the [installation script](slides/download/install.R)
 -   Curiosity `r emoji::emoji("curious")`
 -   Positive attitude `r emoji::emoji("smile")`
@@ -207,7 +202,7 @@ knitr::include_graphics("resources/pkg_graph.png")
 
 # Question, Comments?
 
-# License information
+# License information {.smaller}
 
 - Creators (initial authors): 
   Daniel Sabanes Bove 

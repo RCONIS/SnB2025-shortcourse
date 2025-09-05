@@ -57,24 +57,13 @@ author: tbd
     -   Use [testthat](https://cran.r-project.org/package=testthat) to test, test, and test
     -   Use [covr](https://cran.r-project.org/package=covr) to improve the test coverage
 
-## Collaboration
-
-- Version control is key
-    - Multiple people working on code without strong VC $\leadsto$ disaster!
-    - There are different options, but git is the defacto standard for R packages
-    - Git needs a friend - use platforms like GitHub or GitLab
-- Automated CI/CD allows for much quicker iteration
-    - Automate tests to avoid bugs slipping back in
-- Technology does not solve everything - foster a positive culture
-    - Keep internal and external contributors engaged
-    - Invest in documentation to make it easier to contribute
-
 ## Publication
 
 -   `pkgdown` can help you easily create a nice website for your package
 -   Versions and licenses along with `NEWS` updates are important
--   GitHub helps with tagging of release versions
+-   GitHub pages are a great way to present your package to the world
 -   R-Hub helps with checking before CRAN submission
+-   Bioconductor is a great alternative for omics packages
 
 ## Possible next steps
 
