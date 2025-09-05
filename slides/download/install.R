@@ -2,7 +2,6 @@ install.packages(c(
     "tidyverse",
     "testthat",
     "covr",
-    "data.table",
     "usethis",
     "roxygen2",
     "devtools",
@@ -15,5 +14,9 @@ install.packages(c(
     "styler",
     "lintr",
     "pkgdown",
-    "remotes"
+    "remotes",
+    "rhub",
+    "roxygen2md",
+    "DT",
+    "htmltools"
 ))
