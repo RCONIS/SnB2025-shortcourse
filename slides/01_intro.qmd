@@ -2,12 +2,12 @@
 title: "1 Introduction"
 description: "Introduction and outline of program"
 image: thumbnails/hello.jpg
-author: Daniel Sabanés Bové and Friedrich Pahlke
+author: Daniel Sabanés Bové and Jack Talboys
 ---
 
 ## Disclaimer
 
-*Any opinions expressed in this presentation and on the following slides are solely those of the presenter and not necessarily those of their employers.*
+{{< include _disclaimer.qmd >}}
 
 ## Daniel
 
@@ -64,7 +64,6 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 
 -   Understand the basic structure of an R package
 -   Create your own R `r fontawesome::fa("cube")`
--   Learn about & apply professional `r fontawesome::fa("cube")` development workflow
 -   Learn & apply fundamentals of quality control for R `r fontawesome::fa("cube")`
 -   Learn how to make an R `r fontawesome::fa("cube")` available to others
 
@@ -73,9 +72,8 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 | Time               | Topic                                        |
 |--------------------|:---------------------------------------------|
 | 14:00 - 14:30 CEST | Introduction and outline                     |
-| 14:30 - 15:15 CEST | R packages, what are they? + practical       |
-| 15:15 - 15:45 CEST | Workflow for creating R packages + practical |
-| 15:45 - 16:30 CEST | Package quality + exercise                   |
+| 14:30 - 15:30 CEST | R packages, what are they? + practical       |
+| 15:30 - 16:30 CEST | Package quality + exercise                   |
 | 16:30 - 17:15 CEST | Publication + practical                      |
 | 17:15 - 17:30 CEST | Conclusion                                   |
 
@@ -86,14 +84,10 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
     -   all slides
     -   sources available at [github.com/RCONIS/SnB2025-shortcourse](https://github.com/RCONIS/SnB2025-shortcourse)
     -   all materials CC-BY-SA 4.0
--   We offer a [gitter chat channel](https://matrix.to/#/#workshop-r-swe_community:gitter.im)
-    -   use to ask your peers questions
 
 ## What you will need
 
--   Local R development environment with
-    -   git `r fontawesome::fa("git-alt")`
-    -   Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
+-   Local R development environment with Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
 -   Install additional R packages using the [installation script](slides/download/install.R)
 -   Curiosity `r emoji::emoji("curious")`
 -   Positive attitude `r emoji::emoji("smile")`
@@ -208,7 +202,7 @@ knitr::include_graphics("resources/pkg_graph.png")
 
 # Question, Comments?
 
-# License information
+# License information {.smaller}
 
 - Creators (initial authors): 
   Daniel Sabanes Bove 
@@ -218,8 +212,7 @@ knitr::include_graphics("resources/pkg_graph.png")
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/),
   Kevin Kunzmann 
   [`r fontawesome::fa("github")`](https://github.com/kkmann/) 
-  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/)
-- In the current version, changes were done by (later authors): 
+  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/), 
   Andrew Bean
   [`r fontawesome::fa("github")`](https://github.com/andrew-bean)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrew-bean-83539116/),
@@ -230,4 +223,8 @@ knitr::include_graphics("resources/pkg_graph.png")
   [`r fontawesome::fa("github")`](https://github.com/philboileau)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/philippe-boileau-773270205/)
   [`r fontawesome::fa("globe")`](https://pboileau.ca/)
+- In the current version, changes were done by (later authors): 
+  Jack Talboys 
+  [`r fontawesome::fa("github")`](https://github.com/jtalboys/)
+  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/jack-talboys-44b854169/)
 {{< include _license_footer.qmd >}}
