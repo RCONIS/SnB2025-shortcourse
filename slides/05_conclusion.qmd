@@ -1,0 +1,94 @@
+---
+title: "5 Conclusion"
+description: "Discussion of learning experience, summary of workflow, conclusion and next steps</br>[Photo by Ann H on pexels.com]{.copyright}"
+image: thumbnails/conclusion.jpg
+author: tbd
+---
+
+```{r, echo = FALSE, results = 'hide'}
+# Workaround for the following Quarto issue (do not remove):
+# Quarto will not render embedded R code unless at least one R code chunk exists
+```
+
+## Disclaimer
+
+{{< include _disclaimer.qmd >}}
+
+## Thank you ...
+
+::: columns
+::: {.column width="30%"}
+![](resources/thank-you.jpg)
+:::
+
+::: {.column width="70%"}
+- to you for your engagement and participation `r emoji::emoji("folded_hands")`
+- to the ISCB organizers to make this event possible `r emoji::emoji("clap")`
+- to our fellow `openstatsware` authors of the course materials `r emoji::emoji("books")`
+:::
+:::
+
+# Temperature check
+
+## Enter slido.com: tbd
+
+![](resources/temp_check_iscb2025.png)
+
+##  {background-iframe="https://app.sli.do/event/tbd" background-interactive="true"}
+
+# Take away messages
+
+## R package structure
+
+-   R package = folder structure with (many) conventions
+-   With modern tools `usethis`, `roxygen2` it is easy to start a new package
+-   Packaging a set of functions is an ideal way to share with collaborators and the public
+-   Start small and simple and over time you can learn additional options
+
+## Ensuring quality
+
+-   Quality by Design: use a workable workflow:\
+    Idea $\rightarrow$ Design docs $\rightarrow$ Programming $\rightarrow$ Quality check $\rightarrow$ Publication
+-   Apply common clean code rules:
+    -   Use clear names for functions and variables
+    -   Don't repeat yourself!
+    -   Use [styler](https://styler.r-lib.org) to optimize the code styling
+-   Write tests for your functions
+    -   Use [testthat](https://cran.r-project.org/package=testthat) to test, test, and test
+    -   Use [covr](https://cran.r-project.org/package=covr) to improve the test coverage
+
+## Collaboration
+
+- Version control is key
+    - Multiple people working on code without strong VC $\leadsto$ disaster!
+    - There are different options, but git is the defacto standard for R packages
+    - Git needs a friend - use platforms like GitHub or GitLab
+- Automated CI/CD allows for much quicker iteration
+    - Automate tests to avoid bugs slipping back in
+- Technology does not solve everything - foster a positive culture
+    - Keep internal and external contributors engaged
+    - Invest in documentation to make it easier to contribute
+
+## Publication
+
+-   `pkgdown` can help you easily create a nice website for your package
+-   Versions and licenses along with `NEWS` updates are important
+-   GitHub helps with tagging of release versions
+-   R-Hub helps with checking before CRAN submission
+
+## Possible next steps
+
+-   Bring the information back to your colleagues in your organization
+-   Start building your first own package and share internally first
+-   Later publish it open source on GitHub and submit it to CRAN
+-   Learn about more tips and tricks how to extend R
+
+![Photo by Pixabay on pexels.com](resources/stairs.jpg)
+
+# License information {.smaller}
+
+- Creators (initial authors):
+  Daniel Sabanés Bové [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
+  Alessandro Gasparini [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne) [`r fontawesome::fa("github")`](https://www.github.com/ellessenne) [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/)
+
+{{< include _license_footer.qmd >}}
