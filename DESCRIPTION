@@ -9,4 +9,4 @@ Depends:
   knitr,
   testthat,
   checkmate,
-  covr
+  rhub
