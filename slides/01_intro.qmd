@@ -44,6 +44,8 @@ author: Daniel Sabanés Bové and Jack Talboys
 :::
 :::
 
+<!-- Daniel to continue -->
+
 ## `openstatsware`
 
 ::: columns

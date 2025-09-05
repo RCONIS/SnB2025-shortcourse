@@ -2,7 +2,7 @@
 title: "2 R packages"
 description: "R package syntax + practical"
 image: thumbnails/packages.jpg
-author: tbd
+author: Jack Talboys
 ---
 
 ## Disclaimer

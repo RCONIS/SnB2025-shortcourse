@@ -2,7 +2,7 @@
 title: "4 Publication"
 description: "Publication of R packages + practical<br/>[Photo CC0 by Andrea Piacquadio on pexels.com]{.copyright}"
 image: thumbnails/publish.jpg
-author: tbd
+author: Jack Talboys
 ---
 
 ```{r, echo = FALSE, results = 'hide'}

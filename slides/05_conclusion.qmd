@@ -2,7 +2,7 @@
 title: "5 Conclusion"
 description: "Discussion of learning experience, summary of workflow, conclusion and next steps</br>[Photo by Ann H on pexels.com]{.copyright}"
 image: thumbnails/conclusion.jpg
-author: tbd
+author: Daniel Sabanés Bové
 ---
 
 ```{r, echo = FALSE, results = 'hide'}
@@ -23,7 +23,7 @@ author: tbd
 
 ::: {.column width="70%"}
 - to you for your engagement and participation `r emoji::emoji("folded_hands")`
-- to the ISCB organizers to make this event possible `r emoji::emoji("clap")`
+- to the SnB organizers to make this event possible `r emoji::emoji("clap")`
 - to our fellow `openstatsware` authors of the course materials `r emoji::emoji("books")`
 :::
 :::
