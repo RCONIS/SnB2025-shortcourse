@@ -30,11 +30,11 @@ author: Daniel Sabanés Bové
 
 # Temperature check
 
-## Enter slido.com: tbd
+## Enter slido.com: 2189872
 
-![](resources/temp_check_iscb2025.png)
+![](resources/temp_check_snb2025.png)
 
-##  {background-iframe="https://app.sli.do/event/tbd" background-interactive="true"}
+##  {background-iframe="https://wall.sli.do/event/12t7Trmr1vLSFCJrU8u2ji?section=f634fb7f-bf49-4346-89cf-fe670333ceb4" background-interactive="true"}
 
 # Take away messages
 

@@ -8,3 +8,5 @@ _site
 docs
 
 .Rbuildignore
+
+**/*.quarto_ipynb
