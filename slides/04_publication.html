@@ -7,8 +7,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Jack Talboys">
   <meta name="dcterms.date" content="2025-10-10">
@@ -97,7 +97,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-ce29858ef31f7fc90306434e67c1dbe4.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-1d9983a725b9456420da621c0f346746.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -233,7 +233,7 @@ Jack Talboys
 </section>
 <section id="example-_pkgdown.yml-file" class="slide level2">
 <h2>Example <code>_pkgdown.yml</code> File</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
 <span id="cb1-2"><a></a><span class="fu">url</span><span class="kw">:</span><span class="at"> https://openpharma.github.io/mmrm</span></span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a><span class="fu">template</span><span class="kw">:</span></span>
@@ -328,7 +328,7 @@ Jack Talboys
 <span id="cb1-93"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> fev_data</span></span>
 <span id="cb1-94"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> bcva_data</span></span>
 <span id="cb1-95"><a></a></span>
-<span id="cb1-96"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-96"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Source: the <a href="https://github.com/openpharma/mmrm/blob/main/_pkgdown.yml"><code>mmrm</code></a> package documentation</p>
 </section>
 <section id="section" class="slide level2" data-background-iframe="https://openpharma.github.io/mmrm/latest-tag/reference/index.html" data-background-interactive="true">
@@ -507,8 +507,8 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
 <section id="r-hub-platforms" class="slide level2">
 <h2>R-Hub platforms</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">library</span>(rhub)</span>
-<span id="cb2-2"><a></a>rhub<span class="sc">::</span><span class="fu">rhub_platforms</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">library</span>(rhub)</span>
+<span id="cb2-2"><a></a>rhub<span class="sc">::</span><span class="fu">rhub_platforms</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>── Virtual machines ───────────────────────────────────────────────────────────
  1 [VM]  linux
@@ -524,79 +524,79 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
 
 ── Containers ─────────────────────────────────────────────────────────────────
  6 [CT]  atlas  [ATLAS]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/atlas:latest
  7 [CT]  c23  [C23]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/c23:latest
  8 [CT]  clang-asan  [asan, clang-ASAN]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang-asan:latest
  9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang-ubsan:latest
 10 [CT]  clang16  [clang16]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang16:latest
 11 [CT]  clang17  [clang17]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang17:latest
 12 [CT]  clang18  [clang18]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang18:latest
 13 [CT]  clang19  [clang19]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang19:latest
 14 [CT]  clang20  [clang20]
    R Under development (unstable) (2025-06-03 r88266) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang20:latest
 15 [CT]  donttest  [donttest]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/donttest:latest
 16 [CT]  gcc-asan  [gcc-ASAN, gcc-UBSAN]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 40 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 40 (Conta…
    ghcr.io/r-hub/containers/gcc-asan:latest
 17 [CT]  gcc13  [gcc13]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/gcc13:latest
 18 [CT]  gcc14  [gcc14]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 40 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 40 (Conta…
    ghcr.io/r-hub/containers/gcc14:latest
 19 [CT]  gcc15  [gcc15]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 42 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 42 (Conta…
    ghcr.io/r-hub/containers/gcc15:latest
 20 [CT]  intel  [Intel]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/intel:latest
 21 [CT]  mkl  [MKL]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/mkl:latest
 22 [CT]  nold  [noLD]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/nold:latest
 23 [CT]  noremap  [noRemap]
-   R Under development (unstable) (2025-09-02 r88773) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/noremap:latest
 24 [CT]  nosuggests  [noSuggests]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/nosuggests:latest
 25 [CT]  rchk  [rchk]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/rchk:latest
 26 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/ubuntu-clang:latest
 27 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]
-   R Under development (unstable) (2025-09-03 r88788) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2025-09-27 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/ubuntu-gcc12:latest
 28 [CT]  ubuntu-next  [r-next, r-patched, r-patched-linux-x86_64]
-   R version 4.5.1 Patched (2025-08-23 r88761) on Ubuntu 22.04.5 LTS
+   R version 4.5.1 Patched (2025-09-24 r88882) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/ubuntu-next:latest
 29 [CT]  ubuntu-release  [r-release, r-release-linux-x86_64, ubuntu]
    R version 4.5.1 (2025-06-13) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/ubuntu-release:latest
 30 [CT]  valgrind  [valgrind]
-   R Under development (unstable) (2025-09-04 r88794) on Fedora Linux 38 (Conta…
+   R Under development (unstable) (2025-09-27 r88882) on Fedora Linux 38 (Conta…
    ghcr.io/r-hub/containers/valgrind:latest</code></pre>
 </div>
 </div>
@@ -868,7 +868,7 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -980,13 +980,14 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
