@@ -779,8 +779,9 @@ Check if your package is ready for release with the [devtools](https://cran.r-pr
 
 - Creators (initial authors):
   Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/),
-  Andrew Bean [`r fontawesome::fa("github")`](https://github.com/andrew-bean) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrew-bean-83539116/)
-- In the current version, changes were done by (later authors): TODO
+  Andrew Bean [`r fontawesome::fa("github")`](https://github.com/andrew-bean) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrew-bean-83539116/),
+  Alessandro Gasparini [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne) [`r fontawesome::fa("github")`](https://www.github.com/ellessenne) [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/),
+  Audrey Yeo Te-ying [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/audreyyeo8000/) [`r fontawesome::fa("github")`](https://github.com/audreyyeocH),
   Daniel Sabanés Bové
   [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
