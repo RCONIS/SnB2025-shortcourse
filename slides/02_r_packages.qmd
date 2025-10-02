@@ -225,7 +225,7 @@ export(my_sum)
 
 ## `tests` folder
 
-- Where store the unit tests covering the functionality of the package
+- Where to store the unit tests covering the functionality of the package
 - Get started with `usethis::use_testthat()` and `usethis::use_test()` and
   populate `tests/testthat` folder with unit tests
 - Rarely, tests cannot be run within `testthat` framework, then these can go
